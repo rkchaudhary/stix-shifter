@@ -1,0 +1,109 @@
+{
+  "user-account": {
+    "fields": {
+      "user_id": ["fl_user_id"]
+    }
+  },
+  "email-addr": {
+    "fields": {
+      "value": ["fl_email_add"],
+      "display_name": ["fl_display_name"],
+      "belongs_to_ref": ["fl_belongs_to_ref"]
+    }
+  },
+  "file": {
+    "fields": {
+      "name": ["FileName-dialect1"]
+    }
+  },
+  "artifact": {
+    "fields": {
+      "payload_bin": ["Payload-dialect1"]
+    }
+  },
+  "domain-name": {
+    "fields": {
+      "value": ["DomainName-dialect1"]
+    }
+  },
+  "x_com_ibm_mdm_devices": {
+    "fields": {
+      "device_id": [
+        "fl_device_id"
+      ],
+      "imei": [
+        "fl_imei"
+      ],
+      "device_platform": [
+        "fl_platform_id"
+      ],
+      "managed_status": [
+        "fl_managed_status"
+      ],
+      "last_reported": [
+        "fl_last_reported"
+      ],
+      "current_location": [
+        "fl_current_location"
+      ],
+      "compliance_status": [
+        "fl_compliance_status"
+      ],
+      "device_rooted": [
+        "fl_device_rooted"
+      ],
+      "malware_infected": [
+        "fl_malware_infected"
+      ],
+      "os_version": [
+        "fl_os_version"
+      ],
+      "policy_compliance_status": [
+        "fl_policy_compliance_status"
+      ],
+      "encryption_level": [
+        "fl_encryption_level"
+      ],
+      "is_roaming": [
+        "fl_is_roaming"
+      ],
+      "device_risk_score": [
+        "fl_device_risk_score"
+      ],
+      "device_risk_category": [
+        "fl_device_risk_category"
+      ]
+    }
+  },
+  "ipv4-addr": {
+    "fields": {
+      "value": ["SourceIpV4-dialect1", "DestinationIpV4-dialect1"]
+    }
+  },
+  "ipv6-addr": {
+    "fields": {
+      "value": ["SourceIpV6-dialect1", "DestinationIpV6-dialect1"]
+    }
+  },
+  "url": {
+    "fields": {
+      "value": ["Url-dialect1"]
+    }
+  },
+  "mac-addr": {
+    "fields": {
+      "value": ["SourceMac-dialect1", "DestinationMac-dialect1"]
+    }
+  },
+    "network-traffic": {
+    "fields": {
+      "src_port": ["SourcePort-dialect1"],
+      "dst_port": ["DestinationPort-dialect1"],
+      "start": ["StartTime-dialect1"],
+      "end": ["EndTime-dialect1"],
+      "protocols[*]": ["NetworkProtocol-dialect1"],
+      "src_ref.value": ["SourceIpV4-dialect1", "SourceIpV6-dialect1"],
+      "dst_ref.value": ["DestinationIpV4-dialect1", "DestinationIpV6-dialect1"]
+    }
+  }
+}

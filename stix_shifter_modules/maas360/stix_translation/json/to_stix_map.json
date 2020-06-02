@@ -1,0 +1,65 @@
+{
+  "fl_user_id": {
+    "key": "user-account.user_id"
+  },
+  "fl_email_add": {
+    "key": "email-addr.value"
+  },
+  "fl_device_id": {
+    "key": "x_com_ibm_mdm_devices.device_id",
+    "cybox": false
+  },
+  "fl_imei": {
+    "key": "x_com_ibm_mdm_devices.imei",
+    "cybox": false
+  },
+  "fl_device_platform": {
+    "key": "x_com_ibm_mdm_devices.device_platform",
+    "cybox": false
+  },
+  "fl_managed_status": {
+    "key": "x_com_ibm_mdm_devices.managed_status",
+    "cybox": false
+  },
+  "fl_last_reported": {
+    "key": "x_com_ibm_mdm_devices.managed_status",
+    "cybox": false
+  },
+  "fl_last_reported": {
+    "key": "x_com_ibm_mdm_devices.last_reported",
+    "cybox": false
+  },
+  "fl_current_location": {
+    "key": "x_com_ibm_mdm_devices.current_location",
+    "cybox": false
+  },
+  "fl_compliance_status": {
+    "key": "x_com_ibm_mdm_devices.compliance_status",
+    "cybox": false
+  },
+  "fl_device_rooted": {
+    "key": "x_com_ibm_mdm_devices.device_rooted",
+    "cybox": false
+  },
+  "fl_device_risk_score": {
+    "key": "x_com_ibm_mdm_devices.device_risk_score",
+    "cybox": false
+  },
+   "timestamp": [
+        {
+            "key": "first_observed",
+            "transformer": "EpochSecondsToTimestamp",
+            "cybox": false
+        },
+        {
+            "key": "last_observed",
+            "transformer": "EpochSecondsToTimestamp",
+            "cybox": false
+        }
+    ],
+    "event_count": {
+        "key": "number_observed",
+        "cybox": false,
+        "transformer": "ToInteger"
+    }
+}
